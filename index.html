@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--link to stylesheet-->
+    <link rel="stylesheet" type="text/css" href="site.css">
+
+    <!--link to javascript-->
+    <script src="site.js"></script>
+
+</head>
+<body onload="page()">
+
+     <!--HEADER-->
+
+    <header>
+       <ul>
+           <li>
+               <button class="login" onclick="loginpage()">Login</button> <!--Calling loginpage()-->
+           </li>
+           <li>
+               <button class="signup" onclick="signup()">Sign Up</button><!--Calling signup()-->
+           </li>
+           <li class="search" style="float: right; padding: 12px 16px;transform: scale(1.5); margin-right: 40px;">
+               <input type="text" placeholder="Searchbar">
+           </li>
+        </ul>
+    </header>
+
+    <!--SECTION-->
+
+    <section>
+
+         <!--NAVBAR-->
+
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="home()">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+         <!--ARTICLE-->
+
+        <article>
+
+        <div id="demo"></p><u><h1></h1><center>Welcome to the site</center></h1></u><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, consequatur minus? Laboriosam ex animi rerum recusandae nisi rem aliquam veniam accusamus exercitationem minus, necessitatibus facilis praesentium provident ducimus debitis ullam!
+        <br><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio dignissimos deserunt ipsum, accusantium iusto voluptas officia recusandae laborum praesentium ipsam tenetur nemo! Aliquid in aspernatur, molestias ipsam sapiente eos ab!
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ducimus impedit, incidunt quisquam nihil, porro numquam ipsa dignissimos provident veritatis nemo expedita. Nisi molestias tempora minima ipsum quos, omnis totam.
+        <br><br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore soluta eius? Molestias fugit sapiente rem, commodi laborum eaque? Et, a quae labore quis nesciunt quas vel ipsum accusamus quos.
+        <br><br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam itaque a corrupti incidunt dolorum at quasi, dicta nobis consequatur, quia neque beatae ullam facere reprehenderit eaque unde ipsum consectetur similique.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptas, natus quam quas temporibus laborum pariatur repudiandae dolore, minima ullam reprehenderit dignissimos aut nihil voluptates mollitia rerum quod beatae cumque!
+        <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio voluptas suscipit dolore provident vel, corrupti, tempora eligendi quos praesentium voluptate eum excepturi est dicta aut aliquam neque iure! Numquam, maiores.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque debitis enim laborum ducimus, soluta culpa tempora magnam autem inventore. Nisi, vitae eveniet quisquam repudiandae perspiciatis sapiente tenetur amet reprehenderit aliquid!
+        <br><br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero cupiditate est magnam officiis. Commodi, esse obcaecati magnam corrupti exercitationem quibusdam temporibus a distinctio, atque deserunt itaque incidunt reiciendis repudiandae sapiente!
+        <br><br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, eum nostrum? Aspernatur quis vitae beatae ipsum quisquam. Ex temporibus, blanditiis, sed rem debitis et odio nostrum quis eos, distinctio qui?
+        <br><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis adipisci, quo repudiandae quis fuga quod eius hic ad consequuntur commodi voluptatibus natus, delectus corporis molestiae sint, obcaecati quos autem aspernatur?
+        <br><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, dolore. Officia nam nostrum aut doloremque soluta unde aspernatur. Repellat consequuntur ullam voluptate qui, eveniet id sunt iure ex libero tempore?
+        <br><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime molestiae voluptate a exercitationem reiciendis debitis. Laborum illo officia alias esse facilis debitis eum repudiandae. Id soluta quisquam vero at nesciunt.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda non quo unde sapiente nihil impedit explicabo, natus corrupti quibusdam temporibus! Voluptate mollitia, aliquid in voluptatem iste iusto eaque eius beatae.
+        </div>
+
+            <!--FORM FOR SIGNUP-->
+            <p id="here"></p>
+                <form id="sp" name="regform" action="welcome.php" method="POST" onsubmit="return check()">
+                      <table>
+                         <tr>
+                             <th><h3><u>Sign-Up Page</u></h3></th>
+                         </tr>
+                         <tr>
+                          <td>Enter Name</td>
+                          <td><input type="text" name="name" placeholder="Name" id="name"></td>
+                         </tr>
+                         <tr>
+                          <td>Enter Age</td>
+                          <td><input type="text" name="age" placeholder="Age" id="age"></td>
+                         </tr>
+                         <tr>
+                          <td>Gender</td>
+                          <td>
+                           <select name="gender" id="gender">
+                            <option value="none" >Select One</option>
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                           </select>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td>E-Mail</td>
+                          <td><input type="text" name="email" placeholder="E-Mail" id="email"></td>
+                         </tr>
+                         <tr>
+                          <td>Degree</td>
+                          <td>
+                           <select name="degree">
+                            <option value="associate">Associate</option>
+                            <option value="bachelor">Bachelor</option>
+                            <option value="masters">Masters</option>
+                            <option value="doctoral">Doctrate</option>
+                           </select>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td>Subject</td>
+                          <td>
+                           <select>
+                            <option value="cs">Computer Science</option>
+                            <option value="it">Information Technology</option>
+                            <option value="mech">Mechanical</option>
+                            <option value="civil">Civil</option>
+                           </select>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td style="float:left;top;">Course Mode</td>
+                          <td>
+                           <input type="radio" name="cm" value="normal" checked>Normal<br>
+                           <input type="radio" name="cm" value="fasttrack">Fast-Track
+                          </td>
+                         </tr>
+                         <tr>
+                          <td style="float:left; top;">Subscribe</td>
+                          <td>
+                           <input type="checkbox" name="sub" value="whitepaper">White Paper<br>
+                           <input type="checkbox" name="sub" value="blogs">Blogs<br>
+                           <input type="checkbox" name="sub" value="books">Books<br>
+                           <input type="checkbox" name="sub" value="articles">Articles
+                          </td>
+                         </tr>
+                         <tr>
+                          <td style="float:left;top;">Reason for choosing the course</td>
+                          <td><textarea rows="4" cols="30" placeholder="Text-Area"></textarea></td>
+                         </tr>
+                         <tr>
+                          <td> 
+                           <input type="submit" value="submit" name="submit" onclick="return check()"> 
+                          </td>
+                         </tr>
+                        </table></form>
+
+                <!--FORM FOR LOGIN-->
+                <form name="login" action="login.php" method="POST" id="lp">
+                    <table>
+                     <tr><th><u><h3>Login Page</h3></u></th></tr>   
+                    <tr>
+                        <td>USERNAME</td>
+                        <td><input type="text" placeholder="username" name="username" id="username"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            PASSWORD
+                        </td>
+                        <td>
+                            <input type="password" placeholder="password" name="password" id="pass">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="submit" value="Login" onclick="return verify()">
+                        </td>
+                    </tr>
+                    </table>
+                </form>
+
+            </article>
+
+         <!--RIGHT BOX-->
+
+        <div class="create">
+            <h1><center>Created By Love Kaushik.</center></h1>
+        </div>
+    </section>
+</body>
+</html>
